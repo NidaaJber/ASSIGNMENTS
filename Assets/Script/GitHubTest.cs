@@ -4,33 +4,35 @@ using UnityEngine;
 
 public class GitHubTest : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
     void Start()
     {
-         Random.Range(1,21);
-            int number = 1;
+        int randomValue = Random.Range(1, 21); 
+        int number = 1;
 
-        while (true)
+       
+        while (number <= 15)
         {
-          
-
             if (number == 5)
             {
-                continue; 
+                number++; 
+                continue;
             }    
 
-           Debug.Log (number);
+            Debug.Log(number);
 
             if (number == 15)
             {
                 break; 
             }
+
+            number++; 
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 }
+
